@@ -39,7 +39,7 @@ html {
 *::selection { background-color: #AD974F; }
 
 ::-moz-selection {
-  background: #68a7ca;
+  background: #AD974F;
 }
 
 a {
