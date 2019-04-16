@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Web Developer, UX and Consultant">
+    <meta name="author" Content="Daniel Saunders">
+    <meta name="keywords" content="web,design,user,expeirence,development,UI/UX,UI UX,Denver,Consultant,skilled">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dan's Contact</title>
+ 	<link rel="stylesheet" href="../css/mainstyle.css" type="text/css">
+  <link rel="stylesheet" href="../fonts/stylesheet.css" type="text/css" charset="utf-8" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ </head>
+<body>
+<section id="banner" role="banner">
+  <span class="name">Dan Saunders</span>
+  <nav class="nav bootstrap_override" role="navigation" aria-label="main navigation">
+    <ul class="nav_list bootstrap_override">
+      <li><a class="nav_link" href="../index.html">Home</a></li>
+      <li><a class="nav_link" href="resume.html">Resume</a></li>
+      <li><a class="current" role="button" aria-label="Contact Me">Contact</a></li>
+    </ul>
+  </nav>
+</section>
+<div class="c_container">
+      <div class="page-header">
+        <h1>Send me some information.</h1>
+        <span class="tomato">Required</span><img class="vert_top" src="../img/asterisk.png">
+      </div>
+    <p id="display"></p>
+    <form id="contact" class="contact-form" action="mailto:dan.c.saunders@gmail.com" enctype="text/plain">
+      <div class="form-group">
+        <label for="firstName" class="left">First Name</label>
+        <img class="vert_top" src="../img/asterisk.png">
+        <input name="firstName" type="text" class="form-control" id="firstName" required>
+      </div>
+      <div class="form-group">
+        <label for="lastName" class="left">Last Name</label>
+        <img class="vert_top" src="../img/asterisk.png">
+        <input name="lastName" type="text" class="form-control" id="lastName" required>
+      </div>
+    <div class="form-group">
+        <label for="emailAddress" class="left">Email Address</label>
+        <img class="vert_top" src="../img/asterisk.png">
+        <input name="emailAddress" type="email" class="form-control" id="emailAddress" required>
+    </div>
+    <div class="form-group">
+        <label for="phoneNumber" class="left">Phone Number</label>
+        <input name="phoneNumber" type="tel" class="form-control" id="phoneNumber">
+    </div>
+    <div class="form-group">
+        <label for="projectType" class="left">Type of Project</label>
+        <input name="projectType" type="text" class="form-control" id="projectType" placeholder="i.e. Website, UI, UX etc...">
+    </div>
+    <div class="form-group">
+        <label for="projectDetails" class="left">Project Details (Character Limit: 1000)</label>
+        <textarea name="projectDetails" type="textarea" class="form-control" id="projectDetails" maxlength="1000" placeholder="Any details such as, goals, requirements, timeline and/or budget are appreciated. You may also skip this and we can discuss it over phone/email."></textarea>
+    </div>
+    <input class="btn btn-default" type="submit" value="Submit">
+    </form>
+</div>
+</section>
+<div class="page_wrap">
+<section id="footer_links" role="contentinfo" aria-label="Professional links and footer information">
+  <div class="top_foot"></div>
+  <div class="bottom_foot">
+  <p class="white reg_text pad_top pad_bot">Use the form above to get in touch!</p>
+  <p class="small_text white copy"> Designed by me, in HTML, CSS, Boootsrap and PHP © 2017</p>
+  </div>
+</section>
+</div>
+<script src='js/form.js'></script>
+</body>
+</html>

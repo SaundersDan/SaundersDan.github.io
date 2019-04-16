@@ -1,0 +1,6 @@
+Color scheme logic
+
+Background: White
+Text on white and banner: #3c3f42
+Links and icons: #79b3ff
+Hover Links: #e9ece5

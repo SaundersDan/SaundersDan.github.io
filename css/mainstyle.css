@@ -1,0 +1,652 @@
+@font-face {
+    font-family: 'Harman Retro';
+    src: url('../fonts/Harman-Retro-webfont.eot');
+    src: url('../fonts/Harman-Retro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Harman-Retro-webfont.woff2') format('woff2'),
+         url('../fonts/Harman-Retro-webfont.woff') format('woff'),
+         url('../fonts/Harman-Retro-webfont.ttf') format('truetype'),
+         url('../fonts/Harman-Retro-webfont.svg#harmanretro') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sentic';
+    src: url('../fonts/sentictext-medium-webfont.eot');
+    src: url('../fonts/sentictext-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sentictext-medium-webfont.woff2') format('woff2'),
+         url('../fonts/sentictext-medium-webfont.woff') format('woff'),
+         url('../fonts/sentictext-medium-webfont.ttf') format('truetype'),
+         url('../fonts/sentictext-medium-webfont.svg#sentictextmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    min-height:100%;
+    position:relative;
+}
+
+.page_wrap {
+ margin: 0 auto;
+ font-family: "Sentic";
+ height: 100%;
+ text-align: center;
+ color: #3c3f42;
+}
+
+*::-moz-selection { background-color: #AD974F;}
+*::selection { background-color: #AD974F; }
+
+::-moz-selection {
+  background: #68a7ca;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.content_link{
+  text-decoration: none;
+  color: #8e793e;
+  border-bottom: 1px black dotted; 
+}
+
+a.content_link:hover {
+  transition: .33s;
+  color: black;
+  border-bottom: 1px solid #AD974F; 
+}
+
+.cube {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  margin: 0;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.svg_wrap {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  color: #3c3f42;
+  font-family: "Sentic";
+  margin: 0 auto;
+}
+
+body > .c_container {
+  padding: 60px 15px 0;
+}
+
+/*nav banner*/
+
+#banner {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  background-color: #3c3f42;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(50, 50, 50, 0.50);
+  -moz-box-shadow:    0px 3px 10px 0px rgba(50, 50, 50, 0.50);
+  box-shadow:         0px 3px 10px 0px rgba(50, 50, 50, 0.50);
+}
+
+#banner ul {
+  margin-top: 10px;
+}
+
+span.name {
+  position: absolute;
+  top: 9px;
+  line-height: 1;
+  left: 15px;
+  font-size: 18px;
+  font-family: "Harman Retro";
+  color: white;
+}
+
+nav.nav ul {
+  list-style-type: none;
+    white-space:nowrap;
+}
+
+nav.nav ul li{
+  display: inline;
+}
+
+ul.nav_list {
+  padding-left: 15px;
+  white-space:nowrap;
+}
+
+nav.nav {
+  position: absolute;
+  display: inline;
+  top: 0;
+  right: 12px;
+  font-family: "Harman Retro";
+  color: white;
+}
+
+a.nav_link {
+  font-size: 16px;
+}
+
+
+@media all and (max-width: 520px) {
+  #banner span.name {
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 520px) {
+  #banner ul {
+    position: relative;
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+  }
+}
+
+@media all and (max-width: 520px) {
+  .current {
+  padding: 2px;
+  border: 2px solid white;
+  }
+}
+
+@media all and (max-width: 550px) {
+  a.nav_link {
+    font-size: 13px;
+  }
+}
+
+@media all and (max-width: 520px) {
+  a.nav_link {
+    font-size: 14px;
+    padding: 4px;
+    border: 2px solid #AD974F;
+  }
+}
+
+@media all and (max-width: 520px) {
+  nav.nav a.nav_link:after {
+  display: none;
+  }
+}
+
+@media all and (max-width: 520px) {
+  nav.nav a.nav_link:hover {
+    border: 2px solid white;
+    transition: 0.5s;
+  }
+}
+
+@media all and (min-width: 750px) {
+  input.form-control,textarea.form-control {
+    width: 60%;
+  }
+}
+
+nav.nav a{
+  position: relative;
+  color: white;
+  margin-right: 2px;
+}
+
+nav.nav a.nav_link:after{
+  content: '';
+  position: absolute;
+  font-size: 16px;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid #AD974F;
+  transition: 0.25s;
+}
+
+nav.nav a.current {
+  border-bottom: 2px solid white;
+  font-size: 16px;
+}
+
+nav.bootstrap_override a.nav_link, a.current:hover {
+text-decoration: none;
+}
+
+nav.nav a.nav_link:hover:after {
+  width:100%;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 520px) {
+  .nav {
+    width: 100%;
+    padding-top: 25px;
+  }
+  
+  .nav_link {
+    width: 100%;
+    float: none;
+  }
+
+  #banner { 
+    height: 80px; 
+  }
+}
+
+/*parallax banner*/
+#p_container {
+  padding: 30px 0 40px 0;
+}
+
+section.front.parallaximg {
+  background-image: url("../img/Banner.jpg");
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  margin: 10px 0 0 0;
+}
+
+span.first {
+ padding-top: 1%;
+}
+
+section.front.top {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+section.front.parallaximg span.titles {
+  text-transform: uppercase;
+  font-family: "Harman Retro";
+  display: block;
+  color: white;
+  line-height: 35px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section.front.parallaximg span {
+  display: block;
+  color: white;
+  font-size: 1em;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section.front:last-child {
+  margin-bottom: 0;
+}
+
+section.front p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+section.front p:last-child {
+  margin-bottom: 0;
+}
+
+@media all and (min-width: 290px) {
+  section.front.top span {
+    font-size: 1em;
+
+  }
+}
+
+@media all and (min-width: 300px) {
+  section.front.top span {
+    font-size: 1.5em;
+
+  }
+}
+
+@media all and (min-width: 600px) {
+  section.front.top span {
+    font-size: 2em;
+  }
+}
+
+@media all and (min-width: 960px) {
+  section.front.top span.titles {
+    font-size: 2.5em;
+  }
+}
+
+/*Content*/
+.line {
+  border: .5px solid #3c3f42;
+  width: 75%;
+  margin: 0 auto;
+}
+
+div.content_header {
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+  color: #3c3f42;
+}
+
+section#workflow {
+  background-color: #ededed;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+div.workflow_box {
+  display: inline-block;
+  margin: 1px 1% 1px 0;
+  vertical-align: top;
+  width: 27%;
+  max-width: 350px;
+  min-width: 148px;
+  min-height: 240px;
+}
+
+.tech1 {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 25px;
+}
+
+section#resume {
+  font-family: "Harman Retro"
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+section#resume {
+  width: 75%;
+  margin: 0 auto;
+}
+
+
+@media all and (max-width: 520px) {
+  section#resume {
+    padding-top: 60px;
+    display: block;
+  }
+}
+
+div.link_wrap {
+  position: relative;
+  display: inline-block;
+  padding: 6px;
+  margin: 0 auto;
+  border: 2px solid #AD974F;
+  background-color: #3c3f42;
+  transition: all 0.5s ease;
+}
+
+div.link_wrap a {
+  position: relative;
+  margin: 0 auto;
+  padding: 6px 0 6px 0;
+  font-family: "Harman Retro";
+  color: white;
+  font-size: 14px;
+  border-bottom: none;
+  transition: all 0.5s ease;
+}
+
+div.link_wrap:hover {
+  padding: 4px 18px 4px 18px;
+  border: 2px solid #AD974F;
+  color: #3c3f42;
+}
+
+div.link_wrap1 {
+  position: relative;
+  display: inline-block;
+  padding: 6px;
+  margin: 0 auto;
+  border: 2px solid #68a7ca;
+  background-color: #ededed;
+  transition: all 0.5s ease;
+}
+
+div.link_wrap1 a{
+  position: relative;
+  margin: 0 auto;
+  padding: 6px 0 6px 0;
+  font-family: "Harman Retro";
+  color: #3c3f42;
+  border-bottom: none;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+div.link_wrap1:hover {
+  padding: 4px 18px 4px 18px;
+  margin-bottom: 4px;
+  background-color: #68a7ca;
+}
+
+.cvhead {
+  padding-left: 4px;
+  border-bottom: 1px solid #AD974F;
+}
+
+
+i.icon {
+  text-shadow: rgb(60, 63, 66) 0px 0px 0px,
+  rgb(198, 198, 198) 1px 1px 0px, 
+  rgb(217, 217, 217) 2px 2px 0px, 
+  rgb(236, 236, 236) 3px 3px 0px; 
+  font-size: 36px; 
+  color: rgb(60, 63, 66); 
+  height: 47px; 
+  width: 47px; 
+  line-height: 47px; 
+  text-align: center; 
+  background-color: rgb(237, 237, 237);
+}
+
+.pad_left {
+  padding-left: 10px;
+}
+
+@media screen and (max-width:490px) {
+    div.workflow_box { 
+    display: block; 
+    margin:  0 auto;
+  }
+}
+
+section#footer_links {
+  display: block;
+  height: 190px;
+}
+
+div.top_foot {
+  position: absolute;
+  bottom: 150px;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  background-color: #AD974F;
+}
+
+div.bottom_foot {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 150px;
+  width: 100%;
+  background-color: #3c3f42;
+}
+
+/*Contact page*/
+.c_container{
+  font-family: "Sentic";
+  font-weight: 0;
+}
+
+#contact {
+    color: #3c3f42;
+}
+
+.contact-form input:required { 
+    background: #fff url(../img/asterisk.png) no-repeat 98%; 
+}
+.contact-form input:focus:invalid { 
+    background: #fff url(../img/invalid.png) no-repeat 98%; 
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535
+}
+
+.contact-form input:valid { 
+    background: #fff no-repeat 98%; 
+}
+
+.c_container .text-muted {
+  margin: 20px 0;
+}
+
+input.btn.btn-default {
+  background-color: #3c3f42;
+  color: white;
+  border: 2px solid #AD974F;
+  margin-bottom: 8px;
+}
+
+/*designer tag*/
+.copy {
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+}
+
+/*General style classes*/
+.cyan {
+  color: #68a7ca;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tomato {
+  color: #AD974F;
+  border-color: #AD974F;
+}
+
+.white {
+  color: white;
+}
+
+.pad_vh {
+  padding-top: 10vh;
+}
+
+p.reg_text {
+  font-family: "Harman Retro";
+  font-size: 1.2em;
+  margin: 0 0 4px 0;
+}
+
+
+
+p.cv_sm_text {
+  font-family: "Harman Retro"
+  font-size: 12px;
+  padding-left: 30px;
+}
+
+p.small_text {
+  margin: 0 auto;
+  font-size: .85em;
+  text-align: left;
+}
+
+p.small_text {
+  margin: 0 auto;
+  font-size: .85em;
+  text-align: left;
+}
+
+
+.abs {
+  font-family: "Harman Retro";
+  font-size: 13px;
+  position: absolute;
+  right:83px;
+  top: 55px;
+}
+
+.abs1 {
+  font-family: "Harman Retro";
+  font-size: 13px;
+  position: absolute;
+  right:4px;
+  top: 35px;
+}
+
+@media all and (max-width: 840px) {
+  .abs {
+    position: inherit;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 840px) {
+  .abs1 {
+    position: inherit;
+    text-align: center;
+  }
+}
+
+.mar_bot {
+  margin-bottom: 1em;
+}
+
+div.line.cyan {
+  border-color: #ad974f;
+}
+
+div.gold {
+  border: 2px solid #ad974f;
+  width: 100%;
+}
+
+
+.pad_top {
+  padding-top: 1em;
+}
+
+.pad_topx2 {
+  padding-top: 2em;
+}
+
+.pad_bot {
+  padding-bottom: 1em;
+}
+
+.left {
+  text-align: left;
+}
+
+.bootstrap_override_link {
+  text-decoration: none;
+}
+
+.vert_top {
+  vertical-align: top;
+}
+
+
